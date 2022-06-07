@@ -23,6 +23,18 @@ cantidad_numeros_positivos = 0  # Inicializo el contador en 0
 
 # for ... in range(....)
 
+num_negativos = 0
+num_positivos = 0 # Inicio los contadores en 0
+
+for i in range(inicio, fin + 1):
+    if i < 0:
+        num_negativos += 1
+    if i >= 0:
+        num_positivos += 1
+    
 # Imprimir el valor de la cantidad de números positivos y negativos
+
+print("La cantidad de numeros negativos es:", num_negativos,
+"\nLa candtidad de numeros positivos es:", num_positivos)
 
 print("terminamos!")
